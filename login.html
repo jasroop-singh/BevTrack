@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+    <h1>Login</h1>
+    <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required><br><br>
+
+        <button type="button" onclick="authenticateUser()">Login</button>
+
+        <button id="formButton">Sign Up</button>
+        
+    </form>
+</div>
+    <!-- Include Firebase configuration and initialization -->
+    <script src="firebase-config.js"></script>
+    <script src="login.js"></script>
+</body>
+<script>
+    document.getElementById("formButton").addEventListener("click", function() {
+      window.location.href = "https://forms.gle/j5V5jZhiV8tdroEG6";
+    });
+    
+  </script>
+
+</html>

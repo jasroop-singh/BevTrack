@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Driver Portal</title>
+
+    <link rel="stylesheet" href="drivelist.css">
+
+    <!-- Add the Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Golf Holes</h1>
+        <button class="holeButton" onclick="togglePingStatus(1)">Hole 1</button>
+        <button class="holeButton" onclick="togglePingStatus(2)">Hole 2</button>
+        <button class="holeButton" onclick="togglePingStatus(3)">Hole 3</button>
+        <button class="holeButton" onclick="togglePingStatus(4)">Hole 4</button>
+        <button class="holeButton" onclick="togglePingStatus(5)">Hole 5</button>
+        <button class="holeButton" onclick="togglePingStatus(6)">Hole 6</button>
+        <!-- Add more buttons for additional holes -->
+    </div>
+
+    <script src="drivelist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Portal</title>
+
+    <link rel="stylesheet" href="homelist.css">
+    <!-- Add the Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <h1>Select a Golf Hole</h1>
+        <select id="holeDropdown">
+            <option value="">Select a hole</option>
+            <option value="1">Hole 1</option>
+            <option value="2">Hole 2</option>
+            <option value="3">Hole 3</option>
+            <option value="4">Hole 4</option>
+            <option value="5">Hole 5</option>
+            <option value="6">Hole 6</option>
+        </select>
+
+        <button id="request-btn" onclick="updatePingStatus()">
+            Request BevCart
+        </button>
+
+        <h2 id="status-text"></h2>
+    </div>
+
+    <div id="message">BevCart's operational hours are 2pm-6pm</div>
+    <script src="homelist.js"></script>
+</body>
+
+</html>

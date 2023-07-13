@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.holeButton {
+    margin: 10px;
+}
+
+.pinged {
+    background-color: green;
+}
